@@ -1,0 +1,22 @@
+name: End to end test
+
+on:
+  # manual trigger
+  workflow_dispatch:
+
+jobs:
+  test-e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: "pnpm"
+      - run: pnpm install
+      - name: Update Hardhat Ethoko version
+        run: pnpm update hardhat-ethoko --latest
+      - run: pnpm test:e2e
