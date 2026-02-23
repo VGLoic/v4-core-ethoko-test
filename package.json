@@ -34,5 +34,6 @@
     "typescript": "~5.8.0",
     "viem": "^2.43.0",
     "vitest": "^4.0.17"
-  }
+  },
+  "packageManager": "pnpm@10.28.2"
 }
