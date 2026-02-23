@@ -8,30 +8,18 @@ importers:
 
   .:
     devDependencies:
-      '@nomicfoundation/hardhat-ignition':
-        specifier: ^3.0.7
-        version: 3.0.7(@nomicfoundation/hardhat-verify@3.0.10(hardhat@3.1.9))(hardhat@3.1.9)
       '@nomicfoundation/hardhat-network-helpers':
         specifier: ^3.0.0
         version: 3.0.3(hardhat@3.1.9)
       '@nomicfoundation/hardhat-toolbox-viem':
         specifier: ^5.0.2
         version: 5.0.2(34c195437a629099ca9dd7ed3398bd3e)
-      '@nomicfoundation/hardhat-verify':
-        specifier: ^3.0.0
-        version: 3.0.10(hardhat@3.1.9)
       '@types/node':
         specifier: ^22.8.5
         version: 22.19.11
-      dotenv:
-        specifier: ^17.2.4
-        version: 17.3.1
       eslint:
         specifier: ^9.39.1
         version: 9.39.3
-      forge-std:
-        specifier: github:foundry-rs/forge-std#v1.9.4
-        version: https://codeload.github.com/foundry-rs/forge-std/tar.gz/1eea5bae12ae557d589f9f0f0edae2faa47cb262
       hardhat:
         specifier: ^3.1.7
         version: 3.1.9
@@ -1317,10 +1305,6 @@ packages:
     resolution: {integrity: sha512-EjePK1srD3P08o2j4f0ExnylqRs5B9tJjcp9t1krH2qRi8CCdsYfwe9JgSLurFBWwq4uOlipzfk5fHNvwFKr8Q==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
 
-  dotenv@17.3.1:
-    resolution: {integrity: sha512-IO8C/dzEb6O3F9/twg6ZLXz164a2fhTnEWb95H23Dm4OuN+92NmEAlTrupP9VW6Jm3sO26tQlqyvyi4CsnY9GA==}
-    engines: {node: '>=12'}
-
   elliptic@6.6.1:
     resolution: {integrity: sha512-RaddvvMatK2LJHqFJ+YA4WysVN5Ita9E35botqIYspQ4TkRAlCicdzKOjlyv/1Za5RyTNn7di//eEV0uTAfe3g==}
 
@@ -1446,10 +1430,6 @@ packages:
 
   flatted@3.3.3:
     resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
-
-  forge-std@https://codeload.github.com/foundry-rs/forge-std/tar.gz/1eea5bae12ae557d589f9f0f0edae2faa47cb262:
-    resolution: {tarball: https://codeload.github.com/foundry-rs/forge-std/tar.gz/1eea5bae12ae557d589f9f0f0edae2faa47cb262}
-    version: 1.9.4
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -3770,8 +3750,6 @@ snapshots:
 
   diff-sequences@29.6.3: {}
 
-  dotenv@17.3.1: {}
-
   elliptic@6.6.1:
     dependencies:
       bn.js: 4.12.3
@@ -3949,8 +3927,6 @@ snapshots:
       keyv: 4.5.4
 
   flatted@3.3.3: {}
-
-  forge-std@https://codeload.github.com/foundry-rs/forge-std/tar.gz/1eea5bae12ae557d589f9f0f0edae2faa47cb262: {}
 
   fsevents@2.3.3:
     optional: true
