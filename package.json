@@ -21,6 +21,9 @@
     "access": "public",
     "provenance": true
   },
+  "scripts": {
+    "test:e2e": "vitest run e2e-test"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-ignition": "^3.0.7",
     "@nomicfoundation/hardhat-network-helpers": "^3.0.0",

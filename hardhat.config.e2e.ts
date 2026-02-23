@@ -6,11 +6,13 @@ import "dotenv/config";
 export default defineConfig({
   plugins: [hardhatToolboxViemPlugin, HardhatEthoko],
   ethoko: {
-    project: "uniswap-v4-core",
+    project: "uniswap-v4-core-ethoko-test",
+    pulledArtifactsPath: "./ethoko-e2e/.ethoko",
+    typingsPath: "./.ethoko-typings",
     compilationOutputPath: "./out",
     storageConfiguration: {
       type: "local",
-      path: "./ethoko-storage",
+      path: "./ethoko-e2e/.storage",
     },
   },
   solidity: {
@@ -38,5 +40,8 @@ export default defineConfig({
         mnemonic: configVariable("SEPOLIA_MNEMONIC"),
       },
     },
+  },
+  paths: {
+    sources: "./src", // Use ./src rather than ./contracts as Hardhat expects
   },
 });
