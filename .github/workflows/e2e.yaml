@@ -1,6 +1,8 @@
 name: End to end test
 
 on:
+  repository_dispatch:
+    types: [trigger-e2e-tests]
   # manual trigger
   workflow_dispatch:
 
